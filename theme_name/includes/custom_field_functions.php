@@ -1,22 +1,17 @@
 <?php
 
 	/* Functions for processing custom fields */
-	// just semantics, but is more clear.	
 	function format_custom_field($field, $format = '', $date_format = 'F j, Y')
 	{
-		// No need to declar the var here, it's created below		
-		// $fetch = $field;
+
 		$fetch = get_post_custom_values($field);
 		$fetch = $fetch[0];
 		
-		// Test if anything was fetched or return false. Should test using empty()
+		// Test if anything was fetched or return false.
 		if (!$fetch) {
 			return false;	
 		}
 		
-		// switches make more sense for testing the same variable multiple times
-		// also, as you're not running any other checks on the $fetch var, why
-		// not return the value right away?		
 		switch ($format) {
 			case 'date':
 				return date($date_format, $fetch);
@@ -41,22 +36,18 @@
 		}
 	}
 
-	// Get and echo custom field data
-	// Preference I suppose, but feels like cluttering the function namespace.
+	// Get custom field data
+	function get_custom_field($field, $format = '', $date_format = 'F j, Y')
+	{
+		return format_custom_field($field, $format, $date_format);
+	}
+	
+	// Echo custom field data
 	function custom_field($field, $format = '', $date_format = 'F j, Y')
 	{
 		echo format_custom_field($field, $format, $date_format);
 	}
-
 	
-	// Formatting for dates
-	// Why? This is a rare case where PHP's param ordering makes sense.
-	function format_date($date, $date_format)
-	{
-		$date = date($date_format, $date);
-		return $date;
-	}
-
 	
 	// Formatting for Google Maps
 	function display_google_map($code)
