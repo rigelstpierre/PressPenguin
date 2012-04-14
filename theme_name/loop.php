@@ -1,6 +1,6 @@
 	<?php if ( ! have_posts() ) : ?>
 		<article id="post-0" class="post error404 not-found">
-			<h2 class="entry-title"><?php _e( 'Not Found', 'lps' ); ?></h2>
+			<h2 class="entry-title"><?php _e( 'Not Found' ); ?></h2>
 			<p>Sorry, there don't seem to be any posts.</p>
 		</article><!-- #post-0 -->
 	<?php endif; ?>

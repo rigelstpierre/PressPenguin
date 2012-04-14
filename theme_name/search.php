@@ -19,7 +19,7 @@
 					<?php custom_excerpt(45, "More Info"); ?>
 				</article>
 			  <?php endwhile; else: ?>
-			  <p>Sorry, no posts matched your criteria. Please try another keyword.</p>
+			  <p><?php _e('Sorry, no posts matched your criteria. Please try another keyword.'); ?></p>
 			  <?php endif; ?>
 		</section>
 

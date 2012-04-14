@@ -17,19 +17,19 @@
 				<h2>Archive for <?php the_time('F jS, Y'); ?></h2>
 			
 			<?php }elseif (is_month()) { ?>
-				<h2>Archive for <?php the_time('F, Y'); ?></h2>
+				<h2><?php _e('Archive for'); ?> <?php the_time('F, Y'); ?></h2>
 			
 			<?php }elseif (is_year()) { ?>
-				<h2>Archive for <?php the_time('Y'); ?></h2>
+				<h2><?php _e('Archive for'); ?> <?php the_time('Y'); ?></h2>
 			
 			<?php } elseif (is_search()) { ?>
-				<h2>Search Results</h2>
+				<h2><?php _e('Search Results'); ?></h2>
 			
 			<?php } elseif (is_author()) { ?>
-				<h2>Author Archive</h2>
+				<h2><?php _e('Author Archive'); ?></h2>
 			
 			<?php }elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-				<h2>Blog Archives</h2>
+				<h2><?php ('Archives'); ?></h2>
 			
 			<?php } ?>
 	
@@ -43,7 +43,7 @@
 	
 		  <?php endwhile; else: ?>
 		
-		  <p>Sorry, seems like there aren't any posts.</p>
+		  <p><?php _e("Sorry, seems like there aren't any posts."); ?></p>
 	
 		  <?php endif; ?>
 
