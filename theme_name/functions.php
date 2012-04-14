@@ -8,7 +8,6 @@ include_once 'includes/excerpts.php'; // Custom Excerpts
 include_once 'includes/scripts.php'; // Enqued Scripts
 include_once 'includes/custom_field_functions.php'; // Functions for including/processing content from custom fields. See Readme for usage.
 include_once 'includes/document_title.php';
-include_once 'includes/meta.php'; // Creates a <ul> with post meta information.
 include_once 'includes/bodyclass.php'; // Add page slug as body class. Also include the page parent
 
 

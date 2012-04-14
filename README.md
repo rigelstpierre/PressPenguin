@@ -2,6 +2,8 @@
 ## Lightweight WordPress Theme Framework
 A simple, lightweight theme framework for creating WordPress themes faster. I've compiled the code I always use in developing WordPress themes as well as a few plugins that I almost always include.
 
+Note: PressPenguin is only compatable with WordPress 3.4+ since I'm now using get_template_part() with template partials in a subdirectory. If you'd like to use PressPenguin before WordPress 3.4 comes out of beta, remove instances of get_template_part('includes/FILENAME').
+
 ### Markup
 
 The markup is cleanm, semantic html5.

@@ -6,7 +6,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header>
 						<h2><?php the_title(); ?></h2>
-						<?php post_meta(); ?>
+						<?php get_template_part('includes/meta'); ?>
 					</header>
 					<div class="content"><?php the_content();?></div>
 														

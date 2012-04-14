@@ -10,7 +10,7 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header>
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'lps' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-					<?php post_meta(); ?>
+					<?php get_template_part('includes/meta'); ?>
 				</header>
 		<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
 				<article class="entry-summary">

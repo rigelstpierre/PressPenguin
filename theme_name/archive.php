@@ -37,7 +37,7 @@
 	
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		    	<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				<?php post_meta(); ?>
+				<?php get_template_part('includes/meta'); ?>
 			 	<?php custom_excerpt(100, "More Info"); ?>
 			</article>
 	
