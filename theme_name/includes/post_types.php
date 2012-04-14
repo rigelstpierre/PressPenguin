@@ -38,8 +38,6 @@ function posttype_register() { // The perameters of your custom post type.
 		'rewrite' => true,
 		'capability_type' => 'post',
 		'taxonomies' => array('custom_taxonomy'), // Uses the custom taxonomy created in this template
-		'public' => true,
-		'publicly_queryable' => true,
 		'has_archive' => true,
 		'supports' => array('title','editor','thumbnail')
 	  ); 
@@ -82,6 +80,7 @@ function save_details(){
 
 
 // Include custom post types in archive pages
+// Function from: http://uncommoncontent.com/2010/06/08/add-custom-post-types-to-the-loop-by-adding-an-action-to-pre_get_posts
 
 		function ucc_include_custom_post_types( $query ) {
 		  global $wp_query;
