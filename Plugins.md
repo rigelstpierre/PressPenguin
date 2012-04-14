@@ -33,3 +33,8 @@ Security & Spam
 For Music
 =========
 + GigPress http://wordpress.org/extend/plugins/gigpress
+
+For RSS
+=========
+
++ Full Text Feed http://wordpress.org/extend/plugins/full-text-feed

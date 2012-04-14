@@ -115,4 +115,14 @@ function save_details(){
 		  return $query;
 		}
 
+// Include Custom Post Types in RSS Feed
+// Function from WP Beginner: http://www.wpbeginner.com/wp-tutorials/how-to-add-custom-post-types-to-your-main-wordpress-rss-feed/
+/*
+function myfeed_request($qv) {
+	if (isset($qv['feed']) && !isset($qv['post_type']))
+		$qv['post_type'] = array('post', 'POSTYPE', 'OTHER_POSTTYPE');
+	return $qv;
+	}
+add_filter('request', 'myfeed_request');
+*/
 ?>
